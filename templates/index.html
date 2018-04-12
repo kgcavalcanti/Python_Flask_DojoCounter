@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <title>Dojo - Counter</title>
+    </head>
+    <script>
+        
+
+    </script>
+    <body>
+        <div id="container">
+            <header class="header_footer">
+                <img src="{{ url_for('static', filename='Coding-Dojo-logo.png') }}">
+                <h1>Flask Assignment - Counter</h1>
+            </header>
+            <main>
+            	<div id="content">
+                    <h1>Couter: {{counter}}</h1>
+                    <button class='bt_format'><a href="/">Reload page once</a></button>
+                    <button class='bt_format'><a href="/reload">Reload page twice</a></button>
+                    <button class='bt_format'><a href="/reset">Reset counter</a></button>
+				</div>
+            </main>
+            <footer class="header_footer">
+                <h3>Katia Cavalcanti</h3>
+            </footer>
+        </div>
+    </body>
+</html>
